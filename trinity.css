@@ -145,7 +145,7 @@
         background: var(--background-neutral);
     }
     .background-inverse-default {
-        background: var(--text-inverse-default);
+        background: var(--background-inverse-default);
     }
     .background-inverse-neutral {
         background: var(--background-inverse-neutral);
@@ -235,7 +235,7 @@ p, h1, h2, h3, h4, h5, h6 {
     background: var(--background-neutral);
 }
 .background-inverse-default {
-    background: var(--text-inverse-default);
+    background: var(--background-inverse-default);
 }
 .background-inverse-neutral {
     background: var(--background-inverse-neutral);

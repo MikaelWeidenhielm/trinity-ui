@@ -536,36 +536,29 @@ p, h1, h2, h3, h4, h5, h6 {
 .my-240 { margin-left:240px;margin-right:240px; }
 
 .trinity-container {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .trinity-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
-    width: 100%;
 }
 
-.grid-padding {
-    padding: 0 20px;
+.grid-w-small {
+    max-width: 768px;
+    padding: 0 16px;
 }
 
-.grid-max-xs {
-    max-width: 728px;
+.grid-w-default {
+    max-width: 1280px;
+    padding: 0 16px;
 }
 
-.grid-max-sm {
-    max-width: 928px;
-}
-
-.grid-max-md {
-    max-width: 1184px;
-}
-
-.grid-max-lg {
-    max-width: 1440px;
+.grid-w-full {
+    width: 100%
 }
 
 .col-span-full {
@@ -795,6 +788,10 @@ p, h1, h2, h3, h4, h5, h6 {
         grid-template-columns: repeat(12, 1fr);
     }
 
+    .grid-w-small, .grid-w-default {
+        padding: 0 24px;
+    }
+
     .col-span-12 {
         grid-column: span 12;
     }
@@ -892,7 +889,7 @@ p, h1, h2, h3, h4, h5, h6 {
     }
 
     .col-to-12 {
-        grid-column-end: 13;
+        grid-column-end: 12;
     }
 
     .col-to-11 {
@@ -1150,8 +1147,9 @@ p, h1, h2, h3, h4, h5, h6 {
     .sm-mx-240 { margin-left:240px;margin-right:240px; }
     .sm-my-240 { margin-left:240px;margin-right:240px; }
 
-    .grid-padding {
-        padding: 0 48px;
+
+    .grid-w-default {
+        padding: 0 40px;
     }
 
     .sm-col-span-12 {
